@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="614.0" prefWidth="886.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aula14trabalho01.LoginController">
+   <children>
+      <Pane layoutX="5.0" layoutY="5.0" prefHeight="604.0" prefWidth="292.0" style="-fx-background-color: #1a89c9;">
+         <children>
+            <Button fx:id="btnSair" layoutX="74.0" layoutY="194.0" mnemonicParsing="false" onAction="#btnSairClick" prefHeight="48.0" prefWidth="200.0" style="-fx-background-color: #014e87;" text="Sair" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="imgSair" fitHeight="48.0" fitWidth="48.0" layoutX="14.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@exit.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnHome" layoutX="74.0" layoutY="117.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="200.0" style="-fx-background-color: #014e87;" text="Home" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="imgSair1" fitHeight="48.0" fitWidth="48.0" layoutX="14.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@home.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="301.0" layoutY="5.0" prefHeight="604.0" prefWidth="580.0" style="-fx-background-color: #c2c0c0;">
+         <children>
+            <ImageView fitHeight="139.0" fitWidth="555.0" layoutX="13.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@unimater.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnLogin" layoutX="182.0" layoutY="392.0" mnemonicParsing="false" onAction="#btnLoginClick" prefHeight="48.0" prefWidth="200.0" style="-fx-background-color: #014e87;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="100.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="100.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@lock.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtUser" layoutX="174.0" layoutY="216.0" prefHeight="48.0" prefWidth="216.0" />
+            <PasswordField fx:id="txtSenha" layoutX="174.0" layoutY="300.0" prefHeight="48.0" prefWidth="216.0" />
+         </children></Pane>
+   </children>
+</AnchorPane>
