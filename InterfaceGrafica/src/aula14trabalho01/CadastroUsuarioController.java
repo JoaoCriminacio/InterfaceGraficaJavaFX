@@ -33,7 +33,7 @@ public class CadastroUsuarioController implements Initializable {
     
     //Caixa de Texto
     @FXML
-    TextField txtComplemento;
+    TextField txtNomeCompleto;
     @FXML
     TextField txtEstadoCivil;
     
@@ -64,11 +64,11 @@ public class CadastroUsuarioController implements Initializable {
     //Botão Salvar
     @FXML
     private void btnSalvarClick(ActionEvent event){
-        if((txtComplemento.getText().equals("")) || (txtEstadoCivil.getText().equals("")) || (data.equals("")) || (armazenarCNH.equals(""))){
+        if((txtNomeCompleto.getText().equals("")) || (txtEstadoCivil.getText().equals("")) || (data.equals("")) || (armazenarCNH.equals(""))){
             JOptionPane.showMessageDialog(null, "Existem campos vazios!", "Alerta", JOptionPane.ERROR_MESSAGE);
         }else{
             Object[] options = { "OK", "CANCELAR" };
-            JOptionPane.showOptionDialog(null, "Nome: "+txtComplemento.getText()+"\nEstado Civil: "+txtEstadoCivil.getText()+"\nNacionalidade: "+nacionalidade+"\nData de Nascimento: "+dataFormatada+"\nPossui CNH: "+armazenarCNH+"\nEscolaridade: "+escolaridade, "Salvar",JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
+            JOptionPane.showOptionDialog(null, "Nome: "+txtNomeCompleto.getText()+"\nEstado Civil: "+txtEstadoCivil.getText()+"\nNacionalidade: "+nacionalidade+"\nData de Nascimento: "+dataFormatada+"\nPossui CNH: "+armazenarCNH+"\nEscolaridade: "+escolaridade, "Salvar",JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
         }    
     }
     
